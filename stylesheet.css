@@ -3,15 +3,26 @@
    margin: 0;
 }
 
-.grid-container{
+.hero {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.grid-container {
     display: grid;
     grid-auto-rows: auto;
+    grid-template-columns: 100%;
+    width: 100%;
 }
 
 .grid1 {
     height: 60px;
     box-shadow: 0 0 2 0;
     background-color: rgba(187, 199, 164, 1);
+}
+
+.grid2 {
 }
 
 .svg {

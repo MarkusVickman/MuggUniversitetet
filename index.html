@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?ver=2.0">
 </head>
 <body class="grid-container">
     <header class="grid1">
-        <img src="miun_loggo_kopia.svg" class="svg">
+        <img src="logo.svg" class="svg">
         <button class="menu-btn-open" id="open-menu">
             <span class="menu-icon">
                 <span class="bars"></span>
@@ -31,13 +32,21 @@
                 <li><a href="image_processing.html">BILDBEHANDLING</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
     <section class="grid2">
-
+        <picture class="hero">
+            <source type="image/jpg" media="(max-width: 800px)" srcset="liten_bild.jpg">
+            <source type="image/jpg" media="(min-width: 801px) and (max-width: 1520px)" srcset="mellan_bild.jpg">
+            <source type="image/jpg" media="(min-width: 1521px)" srcset="stor_bild.jpg">
+            <img src="mellan_bild.jpg" alt="Bild på en person som pekar på en storskärm med kod.">           
+        </picture>
     </section>
     <section class="grid3">
-
+        <img src="frilaggning01.png" alt="Grön mugg med bubbelformad yta.">
+        <img src="frilaggning02.png" alt="Blå mugg med bubbelformad yta.">
+        <img src="frilaggning03.png" alt="Rosa mugg med bubbelformad yta.">
     </section>
     <div class="grid4">
 
