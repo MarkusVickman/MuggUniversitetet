@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bild behandling</title>
+    <title>Start</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?ver=2.0">
+    <script src="mobile_menu.js" defer></script>
 </head>
-<body>
-    
+<body class="grid-container">
+    <header class="grid1">
+        <a href="index.html"><img src="logo.svg" class="svg"></a>
+        <button class="menu-btn-open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text"><h5>Meny</h5></span>
+        </button>
+        <nav id="main-nav">
+            <button class="menu-btn-close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars-cross1"></span>
+                    <span class="bars-cross2"></span>
+                </span>
+                <span class="menu-text"><h5>Stäng meny</h5></span>
+            </button>
+            <ul>
+                <li><a href="index.html"><h6>STARTSIDA</h6></a></li>
+                <li><a href="about.html"><h6>OM MIG</h6></a></li>
+                <li><a href="image_processing.html"><h6>BILDBEHANDLING</h6></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="grid2">
+        <h1>Bildbehandling</h1>
+    </section>
+    <article class="grid3">
+        <h2>Färgstick</h2>
+        <picture class="hero">
+            <source type="image/jpg" media="(max-width: 800px)" srcset="liten_bild.jpg">
+            <source type="image/jpg" media="(min-width: 801px) and (max-width: 1520px)" srcset="mellan_bild.jpg">
+            <source type="image/jpg" media="(min-width: 1521px)" srcset="stor_bild.jpg">
+            <img src="mellan_bild.jpg" alt="Bild på en person som pekar på en storskärm med kod.">           
+        </picture>
+
+        <h2>Handkolorering och retusch</h2>
+        <picture class="grid4">
+            <source srcset="fargstick_fore.webp" type="image/webp">
+            <img src="fargstick_fore.jpg" alt="En bild på hus före bildhandling. Hela bilden har en gul färgton.">
+        </picture>
+        <picture class="grid5">
+            <source srcset="fargstick.webp" type="image/webp">
+            <img src="fargstick.jpg" alt="En bild på hus efter bildhandling.">
+        </picture>
+
+    <h2>Handkolorering och retusch</h2>
+        <picture class="grid6">
+            <source srcset="handkolorering_fore.webp" type="image/webp">
+            <img src="handkolorering_fore.jpg" alt="En svartvit bild innehållandes en häst och vagn med barn efter i en släde.">
+        </picture>
+
+        <picture class="grid7">
+            <source srcset="Handkolorering.webp" type="image/webp">
+            <img src="handkolorering.jpg" alt="En bild innehållandes en häst och vagn med barn efter i en släde. Bilden är färglagd i efterhand.">
+        </picture>
+    </div>
+    </main>
+    <footer class="grid7">
+        Laborationsuppgift för kursen DT200G, Grafisk design för webb.<br> 
+        Copyright © 2022 För och efternamn  
+    </footer>
 </body>
 </html>
