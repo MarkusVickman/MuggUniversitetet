@@ -16,6 +16,8 @@ h2 {
     font-weight: 700;
     color: rgba(231, 90, 124, 1);
     text-align: center;
+    margin-bottom: 3%;
+    margin-top: 5%;
 }
 
 h3{
@@ -43,8 +45,9 @@ p {
 
 .grid-container {
     display: grid;
+    background-color: rgba(242, 245, 234, 1);
+    grid-gap:0;
     grid-template-columns: 100%;
-    grid-gap: 0px;
     grid-template-areas:
     "header"
     "image1"
@@ -52,7 +55,8 @@ p {
     "product2"
     "product3"
     "search"
-    "marketing";
+    "marketing"
+    "footer";
 }
 
 .grid1 {
@@ -70,27 +74,57 @@ margin-bottom: 10%;
 .grid2 img{
     max-width: 100%;
     height: auto;
+    width:6000px;
 }
 
 .grid3 {
     text-align: center;
+    margin: 10%;
 }
 .grid4 {
     text-align: center;
-}
-.grid5 {
-    text-align: center;
+    grid-area: product2;
+    margin: 10%;
 }
 
-.grid6{
+.bildbehandling{
+    max-width: 100%;
+    height: auto;
+    width:80%;
+}
+
+.bildbehandling2{
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+margin-left: 50%;
+transform: translate(-50%);
+}
+
+.grid5 {
+    text-align: center;
+    margin: 10%;
+}
+
+.grid6 {
+    margin: 10%;
+}
+
+.grid_search{
     color: white;
     grid-area: search;
     position: relative;
-    text-align: center;
     overflow: hidden;
+    margin-bottom: 15%;
 }
 
-.grid6 img{
+#portrait{
+    border-radius: 100%;
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.grid_search img{
     object-fit: contain;
     height: 360px;
     margin-left: 50%;
@@ -99,6 +133,7 @@ margin-bottom: 10%;
 
 .centered{
     position: absolute;
+    text-align: center;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -129,12 +164,12 @@ margin-bottom: 10%;
 
 .grid7 {
     grid-area: marketing;
+    margin:10%;
 }
 
 .grid7 img {
     max-width: 100%;
     height: auto;
-
 }
 
 .svg {
@@ -227,15 +262,27 @@ a {
     text-decoration: none;
 }
 
-footer {
+.gridfooter {
+    grid-area: footer;
     font-size: 1.6rem;
     text-align: center;
     background: rgba(187, 199, 164, 1);
+    padding: 5% 10%;
 }
 
-@media screen and (max-width: 600px) {
+@media (min-width: 801px) and (max-width: 1024px) {
+    nav {
+        width: 340px;
+    }
+    h1{
+        font-size: 3.6rem;
+    }
     
-}
+    h2 {
+        font-size: 3.2rem;
+    }
+
+
 
 @media screen and (max-width: 600px) {
     
