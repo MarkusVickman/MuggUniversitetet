@@ -51,19 +51,24 @@ p {
     grid-template-areas:
     "header"
     "image1"
-    "product1"
+    /*"product1"
     "product2"
-    "product3"
+    "product3"*/
+    "flex1"
     "search"
     "marketing"
     "footer";
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
 }
 
 .grid1 {
+    grid-row: 1/2;
     height: 60px;
     box-shadow: 0 0 2 0;
     background-color: rgba(187, 199, 164, 1);
     grid-area: header;
+
 }
 
 .grid2 {
@@ -81,6 +86,7 @@ margin-bottom: 10%;
     text-align: center;
     margin: 10%;
 }
+
 .grid4 {
     text-align: center;
     grid-area: product2;
@@ -88,28 +94,42 @@ margin-bottom: 10%;
 }
 
 .bildbehandling{
-    max-width: 100%;
+    max-width: 550px;
     height: auto;
     width:80%;
+    margin: 0% 10% 7% 10%;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
-.bildbehandling2{
-    max-width: 100%;
-    height: auto;
-    width: 80%;
-margin-left: 50%;
+.flex1{
+    width: 200px;
+    display: block;
+    margin-left: 50%;
 transform: translate(-50%);
+margin-top: 5%;
 }
+
+.grid_about{
+    margin: 10%;
+}
+
+.grid_uppgift{
+    margin: 10%
+}
+
 
 .grid5 {
     text-align: center;
-    margin: 10%;
 }
 
 .grid6 {
     margin: 10%;
 }
 
+.about{
+    margin: 10%;
+}
 .grid_search{
     color: white;
     grid-area: search;
@@ -122,6 +142,9 @@ transform: translate(-50%);
     border-radius: 100%;
     width: 80%;
     margin-bottom: 10%;
+    max-width: 450px;
+    transform: translate(-50%);
+    margin-left: 50%;
 }
 
 .grid_search img{
@@ -167,7 +190,12 @@ transform: translate(-50%);
     margin:10%;
 }
 
-.grid7 img {
+.grid_reklam {
+    grid-area: marketing;
+    margin:10%;
+}
+
+.grid_reklam img {
     max-width: 100%;
     height: auto;
 }
@@ -182,12 +210,13 @@ transform: translate(-50%);
 
 nav {
     background-color: rgba(187, 199, 164, 1);
-    position:absolute;
+    position:fixed;
     right: 0;
     top: 0;
     height: 100vh;
     width: 255px;
     display: none;
+    z-index:2;
 }
 
 .menu-btn-open {
@@ -264,13 +293,17 @@ a {
 
 .gridfooter {
     grid-area: footer;
-    font-size: 1.6rem;
-    text-align: center;
     background: rgba(187, 199, 164, 1);
-    padding: 5% 10%;
+    padding: 2% 10%;
+    margin-top: 10%;
 }
 
-@media (min-width: 801px) and (max-width: 1024px) {
+footer p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+@media (min-width: 801px) and (max-width: 1520px) {
     nav {
         width: 340px;
     }
@@ -282,8 +315,188 @@ a {
         font-size: 3.2rem;
     }
 
+    .flex1{
+        width: 225px;
+        display: inline;
+        margin-left: 2%;
+        margin-right: 2%;
+        transform: none;
+        margin-top: 3%;
+    }
+
+    .grid2 {
+        grid-area: image1;
+        margin-bottom: 5%;
+        }
+
+    .grid3{
+        margin: 0%;
+    }
+
+    .grid_search{
+        margin-bottom: 10%;
+    }
+
+    .grid_search img{
+        height: auto;
+        width: 100%;
+        margin-left: 0%;
+        transform: none;
+    }
+
+    .grid_reklam img {
+        width: 650px; 
+        height: 430px;
+        transform: translate(-50%);
+        margin-left: 50%;
+    }
+
+    #portrait{
+        border-radius: 100%;
+        width: 60%;
+        margin-bottom: 10%;
+
+    }
+
+    .gridfooter {
+        padding: 1% 10%;
+    }
+
+    .grid_reklam {
+        margin:0%;
+    }
 
 
-@media screen and (max-width: 600px) {
+}
+
+
+
+
+
+
+@media (min-width: 1521px){
+
+
+    h1{
+        font-size: 4.2rem;
+    }
+    
+    h2 {
+        font-size: 3.6rem;
+    }
+    
+    h3{
+        font-size: 3.2rem;
+    }
+
+    .flex1{
+        width: 300px;
+        display: inline;
+        max-width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        transform: none;
+        margin-top: 2%;
+    }
+
+    .grid2 {
+        grid-area: image1;
+        margin-bottom: 3%;
+        }
+
+    .grid3{
+        margin: 0%;
+        
+    }
+
+    .grid_reklam img {
+        width: 650px; 
+        height: 430px;
+        transform: translate(-50%);
+        margin-left: 50%;
+    }
+
+    .grid_search{
+        margin-bottom: 5%;
+    }
+
+    .grid_search img{
+        height: auto;
+        width: 100%;
+        margin-left: 0%;
+        transform: none;
+    }
+
+    .svg {
+        position:absolute;
+        height: 70px;
+        width: 174px;
+        top: 6px;
+        left: 20px;
+    }
+
+    .grid1 {
+        height: 80px;
+    }
+
+    .gridfooter {
+        padding: 1% 10%;
+    }
+
+    .flex2{
+        display: inline-flex;
+    }
+
+    .flex_left{
+        margin-top: 3%;
+    }
+
+    .flex_right{
+        margin: 0% 10% 0% 10%;
+    }
+
+#portrait{
+    grid-area: flex1;
+    border-radius: 100%;
+    width: 100%;
+    margin-left: 70%;
+    max-width: 450px;
+}
+
+.gridfooter {
+    margin-top: 5%;
+}
+
+.float_left{
+ margin: 5%;
+}
+
+
+.grid_fargstick{
+    transform: translate(-60%);
+    margin-left: 50%;
+    display:inline-flex;
+}
+
+.grid_handkolorering{
+    transform: translate(-60%);
+    margin-left: 50%;
+    display:inline-flex;
+}
+
+.bildbehandling{
+    width:550px;
+    margin: 0% 0% 0% 50%;
+    transform: translate(-50%);
+}
+
+.grid_reklam {
+    margin:0%;
+}
+
+.about{
+    margin: 5%;
+}
+
     
 }
