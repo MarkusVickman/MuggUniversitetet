@@ -1,10 +1,13 @@
+/*CSS för hemsidan mugguniversitetet*/
+
+/*generell styling nedan som grundstorlek på text med utgångsvärde 10px och typsnitt.*/
 * {
-   margin: 0;
-   font-size: 10px;
-   font-family: 'Roboto', 'arial', sans-serif;
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Roboto', 'arial', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 3.2rem;
     font-weight: 700;
     color: rgba(231, 90, 124, 1);
@@ -20,13 +23,13 @@ h2 {
     margin-top: 5%;
 }
 
-h3{
+h3 {
     font-size: 2.3rem;
     font-weight: 700;
     text-align: center;
 }
 
-h5{
+h5 {
     font-size: 2.3rem;
     font-weight: 400;
     text-align: center;
@@ -43,182 +46,35 @@ p {
     text-align: left;
 }
 
-/*.grid-container {
-    display: grid;
-    background-color: rgba(242, 245, 234, 1);
-    grid-gap:0;
-    grid-template-columns: 100%;
-    grid-template-areas:
-    "header"
-    "image1"
-    /*"product1"
-    "product2"
-    "product3"*/
-   /* "flex1"
-    "search"
-    "marketing"
-    "footer";
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
-}*/
-
-.grid1 {
-    /*grid-row: 1/2;*/
+/*styling av banner innehållandes loggotyp och meny*/
+.banner {
     height: 60px;
     box-shadow: 0 0 2 0;
     background-color: rgba(187, 199, 164, 1);
-    grid-area: header;
-
 }
 
-.grid2 {
-/*grid-area: image1;*/
-margin-bottom: 10%;
-}
-
-.grid2 img{
-    max-width: 100%;
-    height: auto;
-    width:6000px;
-}
-
-.grid3 {
-    text-align: center;
-    margin: 10%;
-}
-
-.grid4 {
-    text-align: center;
-   /* grid-area: product2;*/
-    margin: 10%;
-}
-
-.bildbehandling{
-    max-width: 550px;
-    height: auto;
-    width:80%;
-    margin: 0% 10% 7% 10%;
-    margin-left: 50%;
-    transform: translate(-50%);
-}
-
-.flex1{
-    width: 200px;
-    display: block;
-    margin-left: 50%;
-transform: translate(-50%);
-margin-top: 5%;
-}
-
-.grid_about{
-    margin: 10%;
-}
-
-.grid_uppgift{
-    margin: 10%
-}
-
-
-.grid5 {
-    text-align: center;
-}
-
-.grid6 {
-    margin: 10%;
-}
-
-.about{
-    margin: 10%;
-}
-.grid_search{
-    color: white;
-   /* grid-area: search;*/
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 15%;
-}
-
-#portrait{
-    border-radius: 100%;
-    width: 80%;
-    margin-bottom: 10%;
-    max-width: 450px;
-    transform: translate(-50%);
-    margin-left: 50%;
-}
-
-.grid_search img{
-    object-fit: contain;
-    height: 360px;
-    margin-left: 50%;
-    transform: translate(-50%);
-}
-
-.centered{
-    position: absolute;
-    text-align: center;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3.2rem;
-    font-weight: 700;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    z-index:1;
-}
-
-.search{
-    display: flex;
-    align-items: center;
-    padding: 6px 27px;
-    border: white solid 3px;
-    background-color: transparent;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 53px;
-    width: 174px;
-    margin-top: 70px;
-    position:absolute;
-    font-size: 3.2rem;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    font-weight: 700;
-    color: white;
-    z-index:1;
-}
-
-.grid7 {
-   /* grid-area: marketing;*/
-    margin:10%;
-}
-
-.grid_reklam {
-  /*  grid-area: marketing;*/
-    margin:10%;
-}
-
-.grid_reklam img {
-    max-width: 100%;
-    height: auto;
-}
-
+/*styling av loggotyp i headern*/
 .svg {
-    position:absolute;
+    position: absolute;
     height: 45px;
     width: 113px;
     top: 8px;
     left: 20px;
 }
 
+/*styling av navigeringen är den är utfälld*/
 nav {
     background-color: rgba(187, 199, 164, 1);
-    position:fixed;
+    position: fixed;
     right: 0;
     top: 0;
     height: 100vh;
     width: 255px;
     display: none;
-    z-index:2;
+    z-index: 2;
 }
 
+/*styling av öppnaknappen till meny*/
 .menu-btn-open {
     display: flex;
     align-items: center;
@@ -230,9 +86,10 @@ nav {
     height: 42px;
     width: 120px;
     margin-top: 9px;
-    position:absolute;
+    position: absolute;
 }
 
+/*styling av stängknappen till menyn*/
 .menu-btn-close {
     display: flex;
     align-items: center;
@@ -241,12 +98,13 @@ nav {
     border: black solid 2px;
     /*cursor: pointer;*/
     margin-left: 50%;
-    margin-top:10px;
+    margin-top: 10px;
     transform: translate(-50%);
     width: 190px;
 }
 
-.bars-cross1{
+/*styling av stäck som är vridna till ett kors i stängknappen i menyn*/
+.bars-cross1 {
     display: block;
     width: 20px;
     height: 3px;
@@ -257,6 +115,7 @@ nav {
     margin-top: 5px;
 }
 
+/*styling av stäck som är vridna till ett kors i stängknappen i menyn*/
 .bars-cross2 {
     display: block;
     width: 20px;
@@ -267,10 +126,12 @@ nav {
     margin-top: -8px;
 }
 
+/*marginal till streck i menyknappen*/
 .menu-icon {
     margin-right: 10px;
 }
 
+/*styling av de tre strecken i menyknapp öppna*/
 .bars {
     display: block;
     width: 20px;
@@ -279,6 +140,7 @@ nav {
     margin: 5px 0;
 }
 
+/*Styling av länkar i menyn*/
 li {
     margin-top: 10%;
     margin-bottom: 10%;
@@ -286,36 +148,163 @@ li {
     list-style: none;
 }
 
+/*styling av alla länkar men avsedd för länktext i menyn*/
 a {
     color: black;
     text-decoration: none;
 }
 
-.gridfooter {
-  /*  grid-area: footer;*/
+/*margin under hero image*/
+.hero_image {
+    margin-bottom: 10%;
+}
+
+/*styling av hero image*/
+.hero_image img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+/*styling av produkt avsnittet på första sidan*/
+.produkter {
+    text-align: center;
+    margin: 10%;
+}
+
+/*styling av produktbilder på förstasidan*/
+.produktbilder {
+    width: 200px;
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 5%;
+}
+
+/*Styling av hur bakgrunden till sökknappen på första sidan ska bete sig*/
+.search_container {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15%;
+}
+
+/*mer styling av bakgrunden till sökknappen*/
+.search_container img {
+    object-fit: contain;
+    height: 360px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+/*Styling av text till sökknappen på första sidan*/
+.centered {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+/*Styling av sökknappen på första sidan*/
+.search {
+    display: flex;
+    align-items: center;
+    padding: 6px 27px;
+    border: white solid 3px;
+    background-color: transparent;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 53px;
+    width: 174px;
+    margin-top: 70px;
+    position: absolute;
+    font-size: 3.2rem;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    color: white;
+    z-index: 1;
+}
+
+/*container till rörlig reklambild*/
+.reklam {
+    margin: 10%;
+}
+
+/*styling av reklambild*/
+.reklam img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Styling av om mig avsnittet*/
+.about {
+    margin: 10%;
+}
+
+/*styling av porträttbilden på "om mig" sidan*/
+#portrait {
+    border-radius: 100%;
+    width: 80%;
+    margin-bottom: 10%;
+    max-width: 450px;
+    transform: translate(-50%);
+    margin-left: 50%;
+}
+
+/*styling av bilderna på bildbehandlingssidan*/
+.bildbehandling {
+    max-width: 550px;
+    height: auto;
+    width: 80%;
+    margin: 0% 10% 7% 10%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+/*styling av footer*/
+footer {
     background: rgba(187, 199, 164, 1);
     padding: 2% 10%;
     margin-top: 10%;
 }
 
+/*styling av text i footer*/
 footer p {
     font-size: 1.6rem;
     text-align: center;
 }
 
+/*media querie för mellanbred skärmbredd*/
 @media (min-width: 801px) and (max-width: 1520px) {
-    nav {
-        width: 340px;
-    }
-    h1{
+
+    h1 {
         font-size: 3.6rem;
     }
-    
+
     h2 {
         font-size: 3.2rem;
     }
 
-    .flex1{
+    /*ökar bredden på menyn i öppen läge*/
+    nav {
+        width: 340px;
+    }
+
+    .hero_image {
+        margin-bottom: 5%;
+    }
+
+    .produkter {
+        margin: 0%;
+    }
+
+    /*breddar visningen och ändrar till visning sida vid sida*/
+    .produktbilder {
         width: 225px;
         display: inline;
         margin-left: 2%;
@@ -324,72 +313,76 @@ footer p {
         margin-top: 3%;
     }
 
-    .grid2 {
-      /*  grid-area: image1;*/
-        margin-bottom: 5%;
-        }
-
-    .grid3{
-        margin: 0%;
-    }
-
-    .grid_search{
+    .search_container {
         margin-bottom: 10%;
     }
 
-    .grid_search img{
+    /*styling av bakgrunden till sökrutan så att den ska fylla innehålla hela bilden och täcka hela bredden*/
+    .search_container img {
         height: auto;
         width: 100%;
         margin-left: 0%;
         transform: none;
     }
 
-    .grid_reklam img {
-        width: 650px; 
+    .reklam {
+        margin: 0%;
+    }
+
+    /*lägger reklambilden i mitten och visar i verklig bredd*/
+    .reklam img {
+        width: 650px;
         height: 430px;
         transform: translate(-50%);
         margin-left: 50%;
     }
 
-    #portrait{
-        border-radius: 100%;
-        width: 60%;
-        margin-bottom: 10%;
-
+    #portrait {
+        margin-bottom: 5%;
     }
 
-    .gridfooter {
+    footer {
         padding: 1% 10%;
     }
-
-    .grid_reklam {
-        margin:0%;
-    }
-
-
 }
 
+/*mediaquerie för visning i bredaste visningläget*/
+@media (min-width: 1521px) {
 
-
-
-
-
-@media (min-width: 1521px){
-
-
-    h1{
+    h1 {
         font-size: 4.2rem;
     }
-    
+
     h2 {
         font-size: 3.6rem;
     }
-    
-    h3{
+
+    h3 {
         font-size: 3.2rem;
     }
 
-    .flex1{
+    .banner {
+        height: 80px;
+    }
+
+    /*förstorar loggotyp*/
+    .svg {
+        position: absolute;
+        height: 70px;
+        width: 174px;
+        top: 6px;
+        left: 20px;
+    }
+
+    .hero_image {
+        margin-bottom: 3%;
+    }
+
+    .produkter {
+        margin: 0%;
+    }
+
+    .produktbilder {
         width: 300px;
         display: inline;
         max-width: 100%;
@@ -399,104 +392,78 @@ footer p {
         margin-top: 2%;
     }
 
-    .grid2 {
-      /*  grid-area: image1;*/
-        margin-bottom: 3%;
-        }
-
-    .grid3{
+    .reklam {
         margin: 0%;
-        
     }
 
-    .grid_reklam img {
-        width: 650px; 
+    .reklam img {
+        width: 650px;
         height: 430px;
         transform: translate(-50%);
         margin-left: 50%;
     }
 
-    .grid_search{
+    .search_container {
         margin-bottom: 5%;
     }
 
-    .grid_search img{
+    .search_container img {
         height: auto;
         width: 100%;
         margin-left: 0%;
         transform: none;
     }
 
-    .svg {
-        position:absolute;
-        height: 70px;
-        width: 174px;
-        top: 6px;
-        left: 20px;
+    #portrait {
+        border-radius: 100%;
+        width: 100%;
+        margin-left: 70%;
+        width: 450px;
     }
 
-    .grid1 {
-        height: 80px;
-    }
-
-    .gridfooter {
-        padding: 1% 10%;
-    }
-
-    .flex2{
+    .about_container {
         display: inline-flex;
     }
 
-    .flex_left{
+    .about_left {
         margin-top: 3%;
     }
 
-    .flex_right{
+    .about_right {
         margin: 0% 10% 0% 10%;
     }
 
-#portrait{
-   /* grid-area: flex1;*/
-    border-radius: 100%;
-    width: 100%;
-    margin-left: 70%;
-    width: 450px;
-}
+    .about {
+        margin: 10% 5% 10% 5%;
+    }
 
-.gridfooter {
-    margin-top: 5%;
-}
+    /*centrerar centrum av 2 bilder till mittan av skärmen*/
+    .fargstick {
+        transform: translate(-60%);
+        margin-left: 50%;
+        display: inline-flex;
+    }
+    /*centrerar centrum av 2 bilder till mittan av skärmen*/
+    .handkolorering {
+        transform: translate(-60%);
+        margin-left: 50%;
+        display: inline-flex;
+    }
 
-.float_left{
- margin: 5%;
-}
+    /*Ger marginal mellan bilderna på bildbehandlingssidan*/
+    .bildbehandling_marginal {
+        margin: 5%;
+    }
 
+    /*naturlig pixel visningsbredd.*/
+    .bildbehandling {
+        width: 550px;
+        margin: 0% 0% 0% 50%;
+        transform: translate(-50%);
+    }
 
-.grid_fargstick{
-    transform: translate(-60%);
-    margin-left: 50%;
-    display:inline-flex;
-}
-
-.grid_handkolorering{
-    transform: translate(-60%);
-    margin-left: 50%;
-    display:inline-flex;
-}
-
-.bildbehandling{
-    width:550px;
-    margin: 0% 0% 0% 50%;
-    transform: translate(-50%);
-}
-
-.grid_reklam {
-    margin:0%;
-}
-
-.about{
-    margin: 10% 5% 10% 5%;
-}
-
-    
+    footer {
+        padding: 1% 10%;
+        margin-top: 5%;
+    }
 }
