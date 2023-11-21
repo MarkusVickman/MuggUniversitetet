@@ -18,3 +18,12 @@ closeMenu.addEventListener("click", function (e){
 })
 
 
+//Funktion som tar bort styling i html dokumentet för att menyn ska visas korrekt på datorer.
+function resize() {
+    if (window.innerWidth > 1520){
+        mainNav.style.display = "";
+    }
+  }
+  
+  //initierar funktion vid ändrad visningstorlek
+  window.onresize = resize;

@@ -374,6 +374,32 @@ footer p {
         left: 20px;
     }
 
+   /*tar bort menyknapp*/
+    .menu-btn-open{
+        display: none;
+    }
+
+    /*tar bort menyknapp*/
+    .menu-btn-close{
+        display: none;
+    }
+
+    /*lägger till ny meny*/
+    nav{
+        position:absolute;
+        display: inline-block;
+        height: 80px;
+        width: 600px;
+        margin-top: 0px;
+        margin-right: 10px;
+    }
+
+    /*styling av länkar till nya menyn*/
+    li{
+        margin: 27px;
+        display: inline-block;
+    }
+
     .hero_image {
         margin-bottom: 3%;
     }
