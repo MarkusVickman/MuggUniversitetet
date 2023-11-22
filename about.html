@@ -11,8 +11,9 @@
 </head>
 
 <body>
+    <!--Header innehållandes en loggotyp och en meny med dess knappar. Vissa av klasserna används av javascript för att göra menyn dynamisk-->
     <header class="banner">
-        <a href="index.html"><img src="logo.svg" class="svg"></a>
+        <a href="index.html"><img src="logo.svg" class="svg" alt="Liten brun, orange loggotyp."></a>
         <button class="menu-btn-open" id="open-menu">
             <span class="menu-icon">
                 <span class="bars"></span>
@@ -20,7 +21,7 @@
                 <span class="bars"></span>
             </span>
             <span class="menu-text">
-                <h5>Meny</h5>
+                Meny
             </span>
         </button>
         <nav id="main-nav">
@@ -30,7 +31,7 @@
                     <span class="bars-cross2"></span>
                 </span>
                 <span class="menu-text">
-                    <h5>Stäng meny</h5>
+                    Stäng meny
                 </span>
             </button>
             <ul id="large-screen">
@@ -47,40 +48,48 @@
         </nav>
     </header>
     <main>
-        <section class="hero_image">
+        <!--visningsbild som är samma för alla sidor och ändrar vilken bild som laddas in beroende på bildstorlek-->
+        <div class="hero_image">
             <picture>
                 <source type="image/jpg" media="(max-width: 800px)" srcset="liten_bild.jpg">
                 <source type="image/jpg" media="(min-width: 801px) and (max-width: 1520px)" srcset="mellan_bild.jpg">
                 <source type="image/jpg" media="(min-width: 1521px)" srcset="stor_bild.jpg">
                 <img src="mellan_bild.jpg" alt="Bild på en person som pekar på en storskärm med kod.">
             </picture>
-        </section>
+        </div>
+        <!--Ett avsnitt om mig med profilbild-->
         <section>
             <h1>Om mig</h1>
-            <div  class="about_container">
+            <div class="about_container">
                 <div class="about_left">
-            <img src="portrait.png" alt="En porträtt bild av mig själv, Markus." id="portrait">
-            </div>
-            <div class="about_right">
-            <article class="about">
-                <h2>Markus Vickman</h2>
-                <p>Hej!
-                    Mina intressen är discgolf, mountainbiking, träning och såklart allt som gäller allt som liknar datateknik.
-                     Både ny och gammal teknik lockar intresse och det är alltid kul att grotta ner sig helt och lära sig hur allt fungerar.
-                      Därför är den här kursen i bildbehandling intressant då vi lär oss om olika tekniker. Det är ett relativt nytt ämna för mig.
-                </p>
-            </article>
+                    <img src="portrait.png" alt="En porträtt bild av mig själv, Markus." id="portrait">
+                </div>
+                <div class="about_right">
+                    <article class="about">
+                        <h2>Markus Vickman</h2>
+                        <p>Hej!
+                            Mina intressen är discgolf, mountainbiking, träning och såklart allt som gäller allt som
+                            liknar datateknik.
+                            Både ny och gammal teknik lockar intresse och det är alltid kul att grotta ner sig helt och
+                            lära sig hur allt fungerar.
+                            Därför är den här kursen i bildbehandling intressant då vi lär oss om olika tekniker. Det är
+                            ett relativt nytt ämna för mig.
+                        </p>
+                    </article>
 
-            <article class="about">
-                <h2>Om uppgiften</h2>
-                <p>Uppgiften har gått ut på att skapa den här hemsidan utifrån en beskrivning, wireframe, moodboards och designskisser. 
-                    Jag har lärt mig om bildkomprimering och bildredigering. Jag har även lärt mig olika sätt hur bilder kan implementeras 
-                    på hemsidor. Det är ganska kluriga program att använda så alla steg tog lite extra tid att utföra. 
-                    Det var även bra att vi fick öva på att skapa hemsidor igen.
-                </p>
-            </article>
-        </div>
-    </div>
+                    <article class="about">
+                        <h2>Om uppgiften</h2>
+                        <p>Uppgiften har gått ut på att skapa den här hemsidan utifrån en beskrivning, wireframe,
+                            moodboards och designskisser.
+                            Jag har lärt mig om bildkomprimering och bildredigering. Jag har även lärt mig olika sätt
+                            hur bilder kan implementeras
+                            på hemsidor. Det är ganska kluriga program att använda så alla steg tog lite extra tid att
+                            utföra.
+                            Det var även bra att vi fick öva på att skapa hemsidor igen.
+                        </p>
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

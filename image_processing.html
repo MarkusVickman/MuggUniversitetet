@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,20 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico?ver=2.0">
     <script src="mobile_menu.js" defer></script>
 </head>
+
 <body>
+    <!--Header innehållandes en loggotyp och en meny med dess knappar. Vissa av klasserna används av javascript för att göra menyn dynamisk-->
     <header class="banner">
-        <a href="index.html"><img src="logo.svg" class="svg"></a>
+        <a href="index.html"><img src="logo.svg" class="svg" alt="Liten brun, orange loggotyp."></a>
         <button class="menu-btn-open" id="open-menu">
             <span class="menu-icon">
                 <span class="bars"></span>
                 <span class="bars"></span>
                 <span class="bars"></span>
             </span>
-            <span class="menu-text"><h5>Meny</h5></span>
+            <span class="menu-text">
+                Meny
+            </span>
         </button>
         <nav id="main-nav">
             <button class="menu-btn-close" id="close-menu">
@@ -25,57 +30,70 @@
                     <span class="bars-cross1"></span>
                     <span class="bars-cross2"></span>
                 </span>
-                <span class="menu-text"><h5>Stäng meny</h5></span>
+                <span class="menu-text">
+                    Stäng meny
+                </span>
             </button>
             <ul>
-                <li><a href="index.html"><h6>STARTSIDA</h6></a></li>
-                <li><a href="about.html"><h6>OM MIG</h6></a></li>
-                <li><a href="image_processing.html"><h6>BILDBEHANDLING</h6></a></li>
+                <li><a href="index.html">
+                        <h6>STARTSIDA</h6>
+                    </a></li>
+                <li><a href="about.html">
+                        <h6>OM MIG</h6>
+                    </a></li>
+                <li><a href="image_processing.html">
+                        <h6>BILDBEHANDLING</h6>
+                    </a></li>
             </ul>
         </nav>
     </header>
     <main>
-    <section class="hero_image">
-        <picture>
-            <source type="image/jpg" media="(max-width: 800px)" srcset="liten_bild.jpg">
-            <source type="image/jpg" media="(min-width: 801px) and (max-width: 1520px)" srcset="mellan_bild.jpg">
-            <source type="image/jpg" media="(min-width: 1521px)" srcset="stor_bild.jpg">
-            <img src="mellan_bild.jpg" alt="Bild på en person som pekar på en storskärm med kod.">           
-        </picture>
+        <!--visningsbild som är samma för alla sidor och ändrar vilken bild som laddas in beroende på bildstorlek-->
+        <div class="hero_image">
+            <picture>
+                <source type="image/jpg" media="(max-width: 800px)" srcset="liten_bild.jpg">
+                <source type="image/jpg" media="(min-width: 801px) and (max-width: 1520px)" srcset="mellan_bild.jpg">
+                <source type="image/jpg" media="(min-width: 1521px)" srcset="stor_bild.jpg">
+                <img src="mellan_bild.jpg" alt="Bild på en person som pekar på en storskärm med kod.">
+            </picture>
+        </div>
+        <!--Avsnitt om bildbehandling-->
+        <section>
+            <h1>Bildbehandling</h1>
+            <h2>Färgstick</h2>
+            <div class="fargstick">
+                <picture class="bildbehandling_marginal">
+                    <source srcset="fargstick_fore.webp" type="image/webp">
+                    <img src="fargstick_fore.jpg"
+                        alt="En bild på hus före bildhandling. Hela bilden har en gul färgton." class="bildbehandling">
+                </picture>
+                <picture class="bildbehandling_marginal">
+                    <source srcset="fargstick.webp" type="image/webp">
+                    <img src="fargstick.jpg" alt="En bild på hus efter bildhandling." class="bildbehandling">
+                </picture>
+            </div>
+            <h2>Handkolorering och retusch</h2>
+            <div class="handkolorering">
+                <picture class="bildbehandling_marginal">
+                    <source srcset="handkolorering_fore.webp" type="image/webp">
+                    <img src="handkolorering_fore.jpg"
+                        alt="En svartvit bild innehållandes en häst och vagn med barn efter i en släde."
+                        class="bildbehandling">
+                </picture>
 
-        
-    </section>
-    <section><h1>Bildbehandling</h1>
-        <h2>Färgstick</h2>
-    <div class="fargstick">
-
-        <picture class="bildbehandling_marginal">
-            <source srcset="fargstick_fore.webp" type="image/webp">
-            <img src="fargstick_fore.jpg" alt="En bild på hus före bildhandling. Hela bilden har en gul färgton." class="bildbehandling">
-        </picture>
-        <picture class="bildbehandling_marginal">
-            <source srcset="fargstick.webp" type="image/webp">
-            <img src="fargstick.jpg" alt="En bild på hus efter bildhandling." class="bildbehandling">
-        </picture>
-    </div>
-    <h2>Handkolorering och retusch</h2>
-        <div class="handkolorering">
-
-        <picture class="bildbehandling_marginal">
-            <source srcset="handkolorering_fore.webp" type="image/webp">
-            <img src="handkolorering_fore.jpg" alt="En svartvit bild innehållandes en häst och vagn med barn efter i en släde." class="bildbehandling">
-        </picture>
-
-        <picture class="bildbehandling_marginal">
-            <source srcset="Handkolorering.webp" type="image/webp">
-            <img src="handkolorering.jpg" alt="En bild innehållandes en häst och vagn med barn efter i en släde. Bilden är färglagd i efterhand." class="bildbehandling">
-        </picture>
-    </div>
-</section>
+                <picture class="bildbehandling_marginal">
+                    <source srcset="Handkolorering.webp" type="image/webp">
+                    <img src="handkolorering.jpg"
+                        alt="En bild innehållandes en häst och vagn med barn efter i en släde. Bilden är färglagd i efterhand."
+                        class="bildbehandling">
+                </picture>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>Laborationsuppgift för kursen DT200G, Grafisk design för webb.<br> 
-        Copyright © 2022 För och efternamn</p>
+        <p>Laborationsuppgift för kursen DT200G, Grafisk design för webb.<br>
+            Copyright © 2022 För och efternamn</p>
     </footer>
 </body>
+
 </html>
